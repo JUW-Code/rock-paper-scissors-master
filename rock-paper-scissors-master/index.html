@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-logo">
+      <img src="./images/logo.svg" alt="Rock Paper Scissors" />
+    </div>
+    <div class="header-score">
+      <h4>SCORE</h4>
+      <p id="score">0</p>
+    </div>
+  </header>
+
+  <main class="game">
+    <div class="game-triangle">
+      <img src="./images/bg-triangle.svg" alt="Triangle background" />
+
+      <div class="choice choice-paper" data-choice="paper">
+        <div class="inner-circle">
+          <img src="./images/icon-paper.svg" alt="Paper" />
+        </div>
+      </div>
+
+      <div class="choice choice-scissors" data-choice="scissors">
+        <div class="inner-circle">
+          <img src="./images/icon-scissors.svg" alt="Scissors" />
+        </div>
+      </div>
+
+      <div class="choice choice-rock" data-choice="rock">
+        <div class="inner-circle">
+          <img src="./images/icon-rock.svg" alt="Rock" />
+        </div>
+      </div>
+    </div>
+
+    <div class="result hidden" id="result">
+      <p id="result-text"></p>
+      <button id="play-again">Play Again</button>
+    </div>
+  </main>
+
+  <footer class="rules">
+    <button class="rules-btn" id="rules-btn">Rules</button>
+  </footer>
+
+  <!-- Rules Modal -->
+  <div class="modal hidden" id="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Rules</h2>
+        <span class="close-btn" id="close-btn">&times;</span>
+      </div>
+      <img src="./images/image-rules.svg" alt="Rules" class="rules-image" />
+    </div>
+  </div>
+
+  <div class="overlay hidden" id="overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
