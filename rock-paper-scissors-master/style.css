@@ -94,14 +94,14 @@ body {
 .choice-paper {
   border: 15px solid var(--Blue500);
   top: 0;
-  left: 0;
+  left: -22%;
   transform: translate(20%, -10%);
 }
 
 .choice-scissors {
   border: 15px solid var(--Gold500);
   top: 0;
-  right: 0;
+  right: -18%;
   transform: translate(-20%, -10%);
 }
 
