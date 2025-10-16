@@ -55,7 +55,6 @@ playAgainBtn.addEventListener("click", () => {
   resultDiv.classList.add("hidden");
 });
 
-// Rules Modal
 rulesBtn.addEventListener("click", () => {
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
